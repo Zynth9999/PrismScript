@@ -1,0 +1,142 @@
+PRISMSCRIPT OFFICIAL MINI DOCUMENTATION 
+
+
+
+Operators:
+- The operators are used to perform operations on variables. They can be 2 or 1 character long.
+
+    division = /
+    is equal to = e=
+    greater than = >>
+    less than = <<
+    less than or equal to = <=
+    greater than or equal to = >=
+    not equal to = |=
+    and = &&
+    or = ||
+    multiplication = *
+    addition = +
+    add to variable directly = ++ (ex. x ++ 32)
+    subtraction = -
+    substract from variable directly = -- (ex. x -- 32)
+    modulus = %
+
+
+If conditions:
+    - If statements allow you to run a block of code if the condition is met.
+
+        example of a basic if statement:
+
+            if variable e= True:
+                term.log('variable is true')
+
+    If else conditions:
+    - If else statements work just like regular if statements, but they also have an "else" clause that will execute when the condition is false.
+        
+        example of a basic if else statement:
+
+            if variable e= True:
+                term.log('Variable is true')
+            else:
+                term.log('variable is false)
+
+    If else if conditions:
+    - If else if statements allow you to check for multiple conditions like OR operators.
+
+        example of a basic if else if statement:
+            if variable e= True:
+                term.log('Variable is true')
+            elif variable e= False:
+                term.log('Variable is false')
+            else:
+                term.log('Variable is neither true nor false')
+
+    Multiple condition statements
+    - Multiple condition statements allow you to check for multiple conditions using AND, OR, NOT operators.
+        
+        example of a basic multiple condition statement
+        if foo e= True && bar e= False:
+            term.log("Foo is true and bar is false")
+
+Functions:
+- Functions are blocks of code that can be reused throughout your program. They take in parameters called arguments which act as placeholders for data
+
+    example of a basic function:
+
+        func my_function1(arg1, arg2, arg3):
+            result = arg1 * arg2 * arg3
+            return result
+
+User Input:
+- User input allows users to interact with your program through command line or GUI interface.
+
+    example:
+
+    user_input = userAsk('What's your name?')
+
+Using modules:
+- Modules are files that contain related functions and variables. They can be imported into other scripts to use their functionality.
+
+    example:
+
+    $use random
+
+    number = random.randint(1, 9)
+    term.log(number)
+
+Code comments:
+- Code comments are used to explain the purpose of code blocks in your script. They can be placed anywhere within your code block but they will not
+    
+    example:
+
+    user_input = userAsk('What's your name?')
+    # this code will ask the user their name
+    term.log(user_input)
+
+
+Variable types:
+- PRISMSCRIPT has typical variable types like:
+
+    Number - Integer, float
+    Text - string
+    Boolean - True/False
+    List - array of values
+    Dictionary - collection of key value pairs
+
+
+Loops:
+- Loops are used for repetitive tasks in programming.
+
+    example:
+
+        i = 0
+        while (i << 5):
+            term.log(i)
+            #rest of the code
+
+    For loop example (knight rider):
+
+        x = 5
+        i = 0
+        for i runfor(x):
+            term.log(i)
+
+        OUTPUT:
+
+        0
+        1
+        2
+        3
+        4
+        5
+
+    Note that you can use any expression as a condition to break out of loops.
+
+
+    Lists:
+    - Lists store multiple items in one single variable, they are essential in programming
+        names = ["John", "Paul", "George", "Ringo"]
+
+        # looping through the list
+        for name in names:
+            term.log(name)
